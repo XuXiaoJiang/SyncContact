@@ -45,7 +45,13 @@
             }];
             __weak __typeof(self) weakself = self;
             [SCContactManager importContactsWithCompletion:^(BOOL success, NSArray *contacts) {
-                [weakself consolidateWithContacts:contacts];
+                NSString *message = [self consolidateWithContacts:contacts];
+                [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                    [SVProgressHUD dismiss];
+                    weakself.statusLabel.text = @"Sync is done";
+                    weakself.syncButton.hidden = NO;
+                    [[[UIAlertView alloc] initWithTitle:nil message:message delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+                }];
             }];
         }else {
             [[NSOperationQueue mainQueue] addOperationWithBlock:^{
@@ -57,7 +63,7 @@
     }];
 }
 
-- (void)consolidateWithContacts:(NSArray *)contacts
+- (NSString *)consolidateWithContacts:(NSArray *)contacts
 {
     NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"contactID" ascending:YES];
     NSArray *oldContacts = [[SCContact all] sortedArrayUsingDescriptors:@[sort]];
@@ -139,12 +145,7 @@
         }
     }
     [[SCDataManager mainContext] save:nil];
-    [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-        [SVProgressHUD dismiss];
-        self.statusLabel.text = @"Sync is done";
-        self.syncButton.hidden = NO;
-        [[[UIAlertView alloc] initWithTitle:nil message:message delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
-    }];
+    return message;
 }
 
 #pragma mark - Actions

@@ -76,4 +76,27 @@
     return des;
 }
 
++ (NSString *)descriptionForDictionary:(NSDictionary *)dict
+{
+    NSString *firstName = dict[@"firstName"];
+    NSString *middleName = dict[@"middleName"];
+    NSString *lastName = dict[@"lastName"];
+    NSArray *phones = dict[@"phoneNumbers"];
+    NSMutableString *des = [NSMutableString string];
+    if ([SCContactManager showFirstNameFirst]){
+        if (firstName) [des appendString:firstName];
+        if (middleName) [des appendString:middleName];
+        if (lastName) [des appendString:lastName];
+    }else {
+        if (lastName) [des appendString:lastName];
+        if (middleName) [des appendString:middleName];
+        if (firstName) [des appendString:firstName];
+    }
+    [des appendString:@" :\n"];
+    for (NSString *number in phones){
+        [des appendFormat:@"%@\n", number];
+    }
+    return des;
+}
+
 @end

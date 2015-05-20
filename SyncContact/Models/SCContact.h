@@ -20,5 +20,6 @@
 - (void)updateWithDictionary:(NSDictionary *)dict;
 - (BOOL)isEqualToContact:(SCContact *)contact;
 - (BOOL)isEqualToDictionary:(NSDictionary *)dict;
++ (NSString *)descriptionForDictionary:(NSDictionary *)dict;
 
 @end

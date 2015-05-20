@@ -15,7 +15,6 @@
 		FF0B72071AFCE0F500290BFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF0B72051AFCE0F500290BFF /* Main.storyboard */; };
 		FF0B72091AFCE0F500290BFF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF0B72081AFCE0F500290BFF /* Images.xcassets */; };
 		FF0B720C1AFCE0F500290BFF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF0B720A1AFCE0F500290BFF /* LaunchScreen.xib */; };
-		FF0B72181AFCE0F500290BFF /* SyncContactTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0B72171AFCE0F500290BFF /* SyncContactTests.m */; };
 		FF0B722C1AFCE31200290BFF /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0B72271AFCE31200290BFF /* SVIndefiniteAnimatedView.m */; };
 		FF0B722D1AFCE31200290BFF /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FF0B72291AFCE31200290BFF /* SVProgressHUD.bundle */; };
 		FF0B722E1AFCE31200290BFF /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0B722B1AFCE31200290BFF /* SVProgressHUD.m */; };
@@ -24,6 +23,7 @@
 		FF0B72371AFCECA700290BFF /* SCContact.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0B72361AFCECA700290BFF /* SCContact.m */; };
 		FF0B723A1AFCF56300290BFF /* SCDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0B72391AFCF56300290BFF /* SCDataManager.m */; };
 		FF0B723D1AFCF60D00290BFF /* SCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0B723C1AFCF60D00290BFF /* SCModel.m */; };
+		FF31B8611B0B238F000C883C /* SCViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF31B8601B0B238F000C883C /* SCViewControllerTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,6 @@
 		FF0B720B1AFCE0F500290BFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FF0B72111AFCE0F500290BFF /* SyncContactTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SyncContactTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF0B72161AFCE0F500290BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF0B72171AFCE0F500290BFF /* SyncContactTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyncContactTests.m; sourceTree = "<group>"; };
 		FF0B72261AFCE31200290BFF /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
 		FF0B72271AFCE31200290BFF /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
 		FF0B72281AFCE31200290BFF /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
@@ -69,6 +68,7 @@
 		FF0B72391AFCF56300290BFF /* SCDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCDataManager.m; sourceTree = "<group>"; };
 		FF0B723B1AFCF60D00290BFF /* SCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCModel.h; sourceTree = "<group>"; };
 		FF0B723C1AFCF60D00290BFF /* SCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCModel.m; sourceTree = "<group>"; };
+		FF31B8601B0B238F000C883C /* SCViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCViewControllerTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,8 +148,8 @@
 		FF0B72141AFCE0F500290BFF /* SyncContactTests */ = {
 			isa = PBXGroup;
 			children = (
-				FF0B72171AFCE0F500290BFF /* SyncContactTests.m */,
 				FF0B72151AFCE0F500290BFF /* Supporting Files */,
+				FF31B8601B0B238F000C883C /* SCViewControllerTests.m */,
 			);
 			path = SyncContactTests;
 			sourceTree = "<group>";
@@ -336,7 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF0B72181AFCE0F500290BFF /* SyncContactTests.m in Sources */,
+				FF31B8611B0B238F000C883C /* SCViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

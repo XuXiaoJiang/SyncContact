@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1AE70DE3-019C-4122-8457-0DBA8343F07A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SyncContact</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D5A67D34578119FD778EFC187FD1B01A24F4C7E0</key>
+		<string>github.com:XuXiaoJiang/SyncContact.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SyncContact.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D5A67D34578119FD778EFC187FD1B01A24F4C7E0</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:XuXiaoJiang/SyncContact.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D5A67D34578119FD778EFC187FD1B01A24F4C7E0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D5A67D34578119FD778EFC187FD1B01A24F4C7E0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SyncContact</string>
+		</dict>
+	</array>
+</dict>
+</plist>
